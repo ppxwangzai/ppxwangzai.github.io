@@ -2,23 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title></title>
     <style>
-        .divclassl{ height: 600px;width: 350px;left: 0px; margin-left: 40px;margin-top:50px; background: url("img/头像.jpg");background-size:100% 100%;position: absolute;border: 2px red solid  }
-        .divclassr{ height: 600px;width: 400px;  right: 0px;margin-right: 40px; margin-top: 50px;background: url("img/照片g1.jpg");background-size:100% 100%;position: absolute ;border: 2px red solid}
-        .divclassm{ height: 600px;width: 450px;  left: 525px;margin-right: 40px; margin-top: 50px;background: url("img/20180402_150829.jpg");background-size:100% 100% ;position: absolute ;border: 2px red solid}
-        .pclass{ width: 200px; margin-top:50px;margin-left:50px;align-content: center;  background: blue;}
-        .divclass1{  height:1920px;width: 1080px; background: #000;background-size:100%; }
-
+        body {
+            background: #000;
+        }
+        .imgs {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        div > img {
+            height: 600px;
+            width: 350px;
+            padding: 20px;
+        }
     </style>
 </head>
-<body class="divclass1">
-<div class="divclassl" id="MyPhoto">
+<body>
+<div class="imgs">
+    <img src="./img/头像.jpg">
+    <img src="./img/照片g1.jpg">
+    <img src="./img/20180402_150829.jpg">
 </div>
-<div class="divclassr" id="WifePhoto">
-</div>
-<div class="divclassm" id="We">
-</div>
-
 </body>
 </html>
